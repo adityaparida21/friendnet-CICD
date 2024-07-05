@@ -17,7 +17,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh 'echo deploying'
-                sh 'ssh aditya@44.204.68.222 -o StrickHostkeyChecking=no'
+                sh 'ssh aditya@44.204.68.222 -o StrickHostkeyChecking=no "bash /home/aditya/friendnet-CICD/scripts/deploy.sh"'
             }
         }
     }
