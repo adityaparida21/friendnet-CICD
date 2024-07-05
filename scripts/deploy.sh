@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # activate the virtual environment
-source ~/env/bin/activate
+source /home/aditya/friendnet-CICD/env/bin/activate
 
 # Cd into the project code
 cd /home/aditya/friendnet-CICD
