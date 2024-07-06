@@ -17,7 +17,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh 'echo deploying'
-                sh 'ssh aditya@44.204.68.222 -o StrictHostKeyChecking=no "bash /home/aditya/friendnet-CICD/scripts/deploy.sh"'
+                sh 'ssh -v aditya@44.204.68.222 -o StrictHostKeyChecking=no "bash /home/aditya/friendnet-CICD/scripts/deploy.sh"'
             }
         }
     }
